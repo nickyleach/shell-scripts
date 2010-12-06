@@ -33,13 +33,13 @@ process_queue(){
 	do
 		code=$(pop_item);
 		echo $code;
-		eval $code;
+		eval $code > /dev/null 2>&1;
 	done
 }
 
 while [ 1 ]
 do
-	$(process_queue);
+	process_queue;
 	if [ $# -ge 2 ]
 	then
 		sleep $2s;
