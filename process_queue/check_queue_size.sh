@@ -19,7 +19,7 @@ fi
 
 if [ $# -ge 2 ]
 then
-	echo cat ${queue_file} | grep ${2} | wc -l
+	echo `cat ${queue_file} | grep ${2} | wc -l`
 else
-	echo cat ${queue_file} | sed '/^\s*$/d' | wc -l
+	echo `cat ${queue_file} | sed '/^\s*$/d' | wc -l`
 fi
