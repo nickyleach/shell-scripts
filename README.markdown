@@ -8,3 +8,4 @@ Just a collection of random shell scripts, most of which probably won't be usefu
 * __ecoutify_itunes__ - Ensure iTunes and Ecoute play nicely together when the keyboard controls are involved
 	* ecoutify\_itunes.sh - Script to backup and modify iTunes.app
 	* iTunes.py - Python script which will delegate to the original iTunes application when Ecoute is not running
+* __run_in_screen.sh__ - Run a script or command in a named screen and automatically background it
