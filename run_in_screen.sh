@@ -40,4 +40,4 @@ else
 	exit 1;
 fi
 
-screen -dmS SCREENNAME bash -c "${2} ${args[@]}" > /dev/null 2>&1
+screen -dmS $SCREENNAME bash -c "${2} ${args[@]}" > /dev/null 2>&1
